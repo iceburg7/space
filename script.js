@@ -140,6 +140,100 @@ $(document).ready(function(){
 		}
 	});
 	
+	$(document).on("click",".vitals",function(){
+		console.log("clicked VITALS");
+		if ($(".vitals").hasClass("closed")){
+			close("._self");
+			close(".__self");
+			hide(".__self");
+			open(".vitals");
+			show("._vitals");
+		}else {
+			close(".vitals");
+			hide("._vitals");
+			hide(".__vitals");
+		}
+	});
+	
+	$(document).on("click",".mood",function(){
+		console.log("clicked MOOD");
+		if ($(".mood").hasClass("closed")){
+			close("._self");
+			close(".__self");
+			hide(".__self");
+			open(".mood");
+			show("._mood");
+		}else {
+			close(".mood");
+			hide("._mood");
+			hide(".__mood");
+		}
+	});
+	
+	$(document).on("click",".statistics",function(){
+		console.log("clicked STATISTICS");
+		if ($(".statistics").hasClass("closed")){
+			close("._self");
+			close(".__self");
+			hide(".__self");
+			open(".statistics");
+			show("._statistics");
+		}else {
+			close(".statistics");
+			hide("._statistics");
+			hide(".__statistics");
+		}
+	});
+	
+	$(document).on("click",".attributes",function(){
+		console.log("clicked ATTRIBUTES");
+		if ($(".attributes").hasClass("closed")){
+			close("._self");
+			close(".__self");
+			hide(".__self");
+			open(".attributes");
+			show("._attributes");
+		}else {
+			close(".attributes");
+			hide("._attributes");
+			hide(".__attributes");
+		}
+	});
+	
+	$(document).on("click",".professional",function(){
+		console.log("clicked PROFESSIONAL");
+		if ($(".professional").hasClass("closed")){
+			close("._attributes");
+			close(".__attributes");
+			hide(".__attributes");
+			open(".professional");
+			show("._professional");
+		}else {
+			close(".professional");
+			hide("._professional");
+			hide(".__professional");
+		}
+	});
+	
+	$(document).on("click",".personal",function(){
+		console.log("clicked PERSONAL");
+		if ($(".personal").hasClass("closed")){
+			close("._attributes");
+			close(".__attributes");
+			hide(".__attributes");
+			open(".personal");
+			show("._personal");
+		}else {
+			close(".personal");
+			hide("._personal");
+			hide(".__personal");
+		}
+	});
+	
+	
+	
+	
+	
 	
 	
 	

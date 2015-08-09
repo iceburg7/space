@@ -64,6 +64,13 @@ body{
 	background-color:#dddddd;
 }
 
+.list{
+	height:20px;
+	padding-top:2px;
+	border:1px solid black;
+	background-color:#eeeeee;
+}
+
 
 
 .hudbox{
@@ -141,6 +148,13 @@ body{
 	left:339px;
 }
 
+.attributesbox{
+	width:101px;
+	position:absolute;
+	left:188px;
+	top:153px;
+}
+
 .statusbox{
 	width:250px;
 	position:absolute;
@@ -155,6 +169,90 @@ body{
 	
 	.statusvalue{
 		width:52px;
+		float:left;
+		padding-left:4px;
+	}
+	
+.vitalsbox{
+	width:250px;
+	position:absolute;
+	left:201px;
+	top:76px;
+}
+
+	.vitalstype{
+		width:110px;
+		float:left;
+	}
+	
+	.vitalsvalue{
+		width:73px;
+		float:left;
+		padding-left:4px;
+	}
+	
+.moodbox{
+	width:250px;
+	position:absolute;
+	left:201px;
+	top:102px;
+}
+	
+	.moodlist{
+		width:227px;
+		float:left;
+	}
+	
+.statisticsbox{
+	width:250px;
+	position:absolute;
+	left:201px;
+	top:128px;
+}
+
+	.statisticstype{
+		width:90px;
+		float:left;
+	}
+	
+	.statisticsvalue{
+		width:150px;
+		float:left;
+		padding-left:4px;
+	}
+	
+.professionalbox{
+	width:250px;
+	position:absolute;
+	left:295px;
+	top:153px;
+}
+
+	.professionaltype{
+		width:145px;
+		float:left;
+	}
+	
+	.professionalvalue{
+		width:55px;
+		float:left;
+		padding-left:4px;
+	}
+	
+.personalbox{
+	width:250px;
+	position:absolute;
+	left:295px;
+	top:177px;
+}
+
+	.personaltype{
+		width:145px;
+		float:left;
+	}
+	
+	.personalvalue{
+		width:55px;
 		float:left;
 		padding-left:4px;
 	}
