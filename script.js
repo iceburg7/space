@@ -95,6 +95,51 @@ $(document).ready(function(){
 		}
 	});
 	
+	$(document).on("click",".viewport",function(){
+		console.log("clicked VIEWPORT");
+		if ($(".viewport").hasClass("closed")){
+			close("._hud");
+			close(".__hud");
+			hide(".__hud");
+			open(".viewport");
+			show("._viewport");
+		}else {
+			close(".viewport");
+			hide("._viewport");
+			hide(".__viewport");
+		}
+	});
+	
+	$(document).on("click",".comms",function(){
+		console.log("clicked COMMS");
+		if ($(".comms").hasClass("closed")){
+			close("._hud");
+			close(".__hud");
+			hide(".__hud");
+			open(".comms");
+			show("._comms");
+		}else {
+			close(".comms");
+			hide("._comms");
+			hide(".__comms");
+		}
+	});
+	
+	$(document).on("click",".status",function(){
+		console.log("clicked STATUS");
+		if ($(".status").hasClass("closed")){
+			close("._self");
+			close(".__self");
+			hide(".__self");
+			open(".status");
+			show("._status");
+		}else {
+			close(".status");
+			hide("._status");
+			hide(".__status");
+		}
+	});
+	
 	
 	
 	
