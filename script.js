@@ -380,9 +380,50 @@ $(document).ready(function(){
 		}
 	});
 	
+	$(document).on("click",".fate",function(){
+		console.log("clicked FATE");
+		if ($(".fate").hasClass("closed")){
+			close("._self");
+			close(".__self");
+			hide(".__self");
+			open(".fate");
+			show("._fate");
+		}else {
+			close(".fate");
+			hide("._fate");
+			hide(".__fate");
+		}
+	});
 	
+	$(document).on("click",".dreams",function(){
+		console.log("clicked DREAMS");
+		if ($(".dreams").hasClass("closed")){
+			close("._self");
+			close(".__self");
+			hide(".__self");
+			open(".dreams");
+			show("._dreams");
+		}else {
+			close(".dreams");
+			hide("._dreams");
+			hide(".__dreams");
+		}
+	});
 	
-	
+	$(document).on("click",".asleep",function(){
+		console.log("clicked ASLEEP");
+		if ($(".asleep").hasClass("closed")){
+			close("._dreams");
+			close(".__dreams");
+			hide(".__dreams");
+			open(".asleep");
+			show("._asleep");
+		}else {
+			close(".asleep");
+			hide("._asleep");
+			hide(".__asleep");
+		}
+	});
 	
 	
 	

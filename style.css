@@ -122,30 +122,35 @@ body{
 	width:90px;
 	position:absolute;
 	left:93px;
+	top:51px;
 }
 
 .suitbox{
 	width:110px;
 	position:absolute;
 	left:161px;
+	top:51px;
 }
 
 .tasksbox{
 	width:100px;
 	position:absolute;
 	left:230px;
+	top:51px;
 }
 
 .viewportbox{
 	width:128px;
 	position:absolute;
 	left:314px;
+	top:51px;
 }
 
 .commsbox{
 	width:190px;
 	position:absolute;
 	left:339px;
+	top:51px;
 }
 
 .attributesbox{
@@ -160,6 +165,13 @@ body{
 	position:absolute;
 	left:188px;
 	top:179px;
+}
+
+.dreamsbox{
+	width:95px;
+	position:absolute;
+	left:188px;
+	top:257px;
 }
 
 .statusbox{
@@ -424,6 +436,28 @@ body{
 		width:260px;
 		float:left;
 		padding-left:4px;
+	}
+	
+.fateimg{
+	width:432px;
+	height:200px;
+	position:absolute;
+	top:212px;
+	left:201px;
+	background-image:url("images/fate1.jpg");
+}
+
+.asleepbox{
+	width:450px;
+	position:absolute;
+	left:289px;
+	top:257px;
+}
+	
+	.asleeplist{
+		width:440px;
+		float:left;
+	}
 	
 	
 	
