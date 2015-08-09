@@ -155,6 +155,13 @@ body{
 	top:153px;
 }
 
+.skillsbox{
+	width:75px;
+	position:absolute;
+	left:188px;
+	top:179px;
+}
+
 .statusbox{
 	width:250px;
 	position:absolute;
@@ -256,4 +263,175 @@ body{
 		float:left;
 		padding-left:4px;
 	}
+	
+.level1box{
+	width:280px;
+	position:absolute;
+	left:269px;
+	top:180px;
+}
 
+	.level1type{
+		width:190px;
+		float:left;
+	}
+	
+	.level1value{
+		width:63px;
+		float:left;
+		padding-left:4px;
+	}
+	
+.level2box{
+	width:280px;
+	position:absolute;
+	left:269px;
+	top:204px;
+}
+
+	.level2type{
+		width:190px;
+		float:left;
+	}
+	
+	.level2value{
+		width:63px;
+		float:left;
+		padding-left:4px;
+	}
+
+.level3box{
+	width:280px;
+	position:absolute;
+	left:269px;
+	top:230px;
+}
+
+	.level3type{
+		width:190px;
+		float:left;
+	}
+	
+	.level3value{
+		width:63px;
+		float:left;
+		padding-left:4px;
+	}
+
+.level4box{
+	width:280px;
+	position:absolute;
+	left:269px;
+	top:255px;
+}
+
+	.level4type{
+		width:190px;
+		float:left;
+	}
+	
+	.level4value{
+		width:63px;
+		float:left;
+		padding-left:4px;
+	}
+	
+.level5box{
+	width:280px;
+	position:absolute;
+	left:269px;
+	top:281px;
+}
+
+	.level5type{
+		width:190px;
+		float:left;
+	}
+	
+	.level5value{
+		width:63px;
+		float:left;
+		padding-left:4px;
+	}
+	
+.level6box{
+	width:280px;
+	position:absolute;
+	left:269px;
+	top:307px;
+}
+
+	.level6type{
+		width:190px;
+		float:left;
+	}
+	
+	.level6value{
+		width:75px;
+		float:left;
+		padding-left:4px;
+	}
+
+.level7box{
+	width:280px;
+	position:absolute;
+	left:269px;
+	top:333px;
+}
+
+	.level7type{
+		width:190px;
+		float:left;
+	}
+	
+	.level7value{
+		width:63px;
+		float:left;
+		padding-left:4px;
+	}
+
+.level8box{
+	width:280px;
+	position:absolute;
+	left:269px;
+	top:359px;
+}
+
+	.level8type{
+		width:190px;
+		float:left;
+	}
+	
+	.level8value{
+		width:63px;
+		float:left;
+		padding-left:4px;
+	}
+	
+.featsbox{
+	width:380px;
+	position:absolute;
+	left:201px;
+	top:206px;
+}
+
+	.featstype{
+		width:90px;
+		float:left;
+	}
+	
+	.featsvalue{
+		width:260px;
+		float:left;
+		padding-left:4px;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

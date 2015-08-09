@@ -230,6 +230,168 @@ $(document).ready(function(){
 		}
 	});
 	
+	$(document).on("click",".skills",function(){
+		console.log("clicked SKILLS");
+		if ($(".skills").hasClass("closed")){
+			close("._self");
+			close(".__self");
+			hide(".__self");
+			open(".skills");
+			show("._skills");
+		}else {
+			close(".skills");
+			hide("._skills");
+			hide(".__skills");
+		}
+	});
+	
+	$(document).on("click",".level1",function(){
+		console.log("clicked LEVEL1");
+		if ($(".level1").hasClass("closed")){
+			close("._skills");
+			close(".__skills");
+			hide(".__skills");
+			open(".level1");
+			show("._level1");
+		}else {
+			close(".level1");
+			hide("._level1");
+			hide(".__level1");
+		}
+	});
+	
+	$(document).on("click",".level2",function(){
+		console.log("clicked LEVEL2");
+		if ($(".level2").hasClass("closed")){
+			close("._skills");
+			close(".__skills");
+			hide(".__skills");
+			open(".level2");
+			show("._level2");
+		}else {
+			close(".level2");
+			hide("._level2");
+			hide(".__level2");
+		}
+	});
+	
+	$(document).on("click",".level3",function(){
+		console.log("clicked LEVEL3");
+		if ($(".level3").hasClass("closed")){
+			close("._skills");
+			close(".__skills");
+			hide(".__skills");
+			open(".level3");
+			show("._level3");
+		}else {
+			close(".level3");
+			hide("._level3");
+			hide(".__level3");
+		}
+	});
+	
+	$(document).on("click",".level4",function(){
+		console.log("clicked LEVEL4");
+		if ($(".level4").hasClass("closed")){
+			close("._skills");
+			close(".__skills");
+			hide(".__skills");
+			open(".level4");
+			show("._level4");
+		}else {
+			close(".level4");
+			hide("._level4");
+			hide(".__level4");
+		}
+	});
+	
+	$(document).on("click",".level5",function(){
+		console.log("clicked LEVEL5");
+		if ($(".level5").hasClass("closed")){
+			close("._skills");
+			close(".__skills");
+			hide(".__skills");
+			open(".level5");
+			show("._level5");
+		}else {
+			close(".level5");
+			hide("._level5");
+			hide(".__level5");
+		}
+	});
+	
+	$(document).on("click",".level6",function(){
+		console.log("clicked LEVEL6");
+		if ($(".level6").hasClass("closed")){
+			close("._skills");
+			close(".__skills");
+			hide(".__skills");
+			open(".level6");
+			show("._level6");
+		}else {
+			close(".level6");
+			hide("._level6");
+			hide(".__level6");
+		}
+	});
+	
+	$(document).on("click",".level7",function(){
+		console.log("clicked LEVEL7");
+		if ($(".level7").hasClass("closed")){
+			close("._skills");
+			close(".__skills");
+			hide(".__skills");
+			open(".level7");
+			show("._level7");
+		}else {
+			close(".level7");
+			hide("._level7");
+			hide(".__level7");
+		}
+	});
+	
+	$(document).on("click",".level8",function(){
+		console.log("clicked LEVEL8");
+		if ($(".level8").hasClass("closed")){
+			close("._skills");
+			close(".__skills");
+			hide(".__skills");
+			open(".level8");
+			show("._level8");
+		}else {
+			close(".level8");
+			hide("._level8");
+			hide(".__level8");
+		}
+	});
+	
+	$(document).on("click",".feats",function(){
+		console.log("clicked FEATS");
+		if ($(".feats").hasClass("closed")){
+			close("._self");
+			close(".__self");
+			hide(".__self");
+			open(".feats");
+			show("._feats");
+		}else {
+			close(".feats");
+			hide("._feats");
+			hide(".__feats");
+		}
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
