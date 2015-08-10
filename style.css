@@ -459,6 +459,30 @@ body{
 		float:left;
 	}
 	
+.daydreamsbox{
+	width:450px;
+	position:absolute;
+	left:289px;
+	top:281px;
+}
+	
+	.daydreamslist{
+		width:440px;
+		float:left;
+	}
+	
+.aspirationsbox{
+	width:450px;
+	position:absolute;
+	left:289px;
+	top:307px;
+}
+	
+	.aspirationslist{
+		width:440px;
+		float:left;
+	}
+	
 	
 	
 	

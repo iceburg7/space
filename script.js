@@ -425,6 +425,36 @@ $(document).ready(function(){
 		}
 	});
 	
+	$(document).on("click",".daydreams",function(){
+		console.log("clicked DAYDREAMS");
+		if ($(".daydreams").hasClass("closed")){
+			close("._dreams");
+			close(".__dreams");
+			hide(".__dreams");
+			open(".daydreams");
+			show("._daydreams");
+		}else {
+			close(".daydreams");
+			hide("._daydreams");
+			hide(".__daydreams");
+		}
+	});
+	
+	$(document).on("click",".aspirations",function(){
+		console.log("clicked ASPIRATIONS");
+		if ($(".aspirations").hasClass("closed")){
+			close("._dreams");
+			close(".__dreams");
+			hide(".__dreams");
+			open(".aspirations");
+			show("._aspirations");
+		}else {
+			close(".aspirations");
+			hide("._aspirations");
+			hide(".__aspirations");
+		}
+	});
+	
 	
 	
 	
