@@ -483,6 +483,97 @@ body{
 		float:left;
 	}
 	
+.suitstatusbox{
+	width:250px;
+	position:absolute;
+	left:289px;
+	top:69px;
+}
+
+	.suitstatustype{
+		width:90px;
+		float:left;
+	}
+	
+	.suitstatusvalue{
+		width:52px;
+		float:left;
+		padding-left:4px;
+	}
+	
+.versionbox{
+	width:300px;
+	position:absolute;
+	left:289px;
+	top:76px;
+}
+
+	.versiontype{
+		width:126px;
+		float:left;
+	}
+	
+	.versionvalue{
+		width:134px;
+		float:left;
+		padding-left:4px;
+	}
+	
+.powerbox{
+	width:250px;
+	position:absolute;
+	left:289px;
+	top:101px;
+}
+	
+	.powerlist{
+		width:120px;
+		float:left;
+	}
+	
+.oxygenbox{
+	width:300px;
+	position:absolute;
+	left:289px;
+	top:127px;
+}
+
+	.oxygentype{
+		width:80px;
+		float:left;
+	}
+	
+	.oxygenvalue{
+		width:80px;
+		float:left;
+		padding-left:4px;
+	}
+	
+.maintenancebox{
+	width:300px;
+	position:absolute;
+	left:289px;
+	top:153px;
+}
+
+	.maintenancetype{
+		width:100px;
+		float:left;
+	}
+	
+	.maintenancevalue{
+		width:80px;
+		float:left;
+		padding-left:4px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

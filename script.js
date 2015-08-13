@@ -455,6 +455,84 @@ $(document).ready(function(){
 		}
 	});
 	
+	$(document).on("click",".suitstatus",function(){
+		console.log("clicked SUITSTATUS");
+		if ($(".suitstatus").hasClass("closed")){
+			close("._suit");
+			close(".__suit");
+			hide(".__suit");
+			open(".suitstatus");
+			show("._suitstatus");
+		}else {
+			close(".suitstatus");
+			hide("._suitstatus");
+			hide(".__suitstatus");
+		}
+	});
+	
+	$(document).on("click",".version",function(){
+		console.log("clicked VERSION");
+		if ($(".version").hasClass("closed")){
+			close("._suit");
+			close(".__suit");
+			hide(".__suit");
+			open(".version");
+			show("._version");
+		}else {
+			close(".version");
+			hide("._version");
+			hide(".__version");
+		}
+	});
+	
+	$(document).on("click",".power",function(){
+		console.log("clicked POWER");
+		if ($(".power").hasClass("closed")){
+			close("._suit");
+			close(".__suit");
+			hide(".__suit");
+			open(".power");
+			show("._power");
+		}else {
+			close(".power");
+			hide("._power");
+			hide(".__power");
+		}
+	});
+	
+	$(document).on("click",".oxygen",function(){
+		console.log("clicked OXYGEN");
+		if ($(".oxygen").hasClass("closed")){
+			close("._suit");
+			close(".__suit");
+			hide(".__suit");
+			open(".oxygen");
+			show("._oxygen");
+		}else {
+			close(".oxygen");
+			hide("._oxygen");
+			hide(".__oxygen");
+		}
+	});
+	
+	$(document).on("click",".maintenance",function(){
+		console.log("clicked MAINTENANCE");
+		if ($(".maintenance").hasClass("closed")){
+			close("._suit");
+			close(".__suit");
+			hide(".__suit");
+			open(".maintenance");
+			show("._maintenance");
+		}else {
+			close(".maintenance");
+			hide("._maintenance");
+			hide(".__maintenance");
+		}
+	});
+	
+	
+	
+	
 	
 	
 	
