@@ -620,6 +620,25 @@ body{
 		float:left;
 	}
 	
+.visualbox{
+	width:800px;
+	position:absolute;
+	left:140px;
+	top:125px;
+}
+
+	.locationimage1{
+		width:494px;
+		height:326px;
+		background-image:url("images/location1.gif");
+	}
+
+	.locationimage2{
+		width:494px;
+		height:326px;
+		background-image:url("images/location2.gif");
+	}
+	
 .printoutbox{
 	width:800px;
 	position:absolute;
@@ -664,6 +683,14 @@ body{
 		float:left;
 	}
 	
+	.connectionimage1{
+		background-image:url("images/stevens.jpg");
+	}
+	
+	.connectionimage2{
+		background-image:url("images/williams.jpg");
+	}
+	
 	.connectiontext{
 		width:250px;
 		height:230px;
@@ -686,7 +713,31 @@ body{
 		margin-bottom:5px;
 	}
 	
+.aboutport1box{
+	width:500px;
+	position:absolute;
+	left:250px;
+	top:120px;
+}
+
+	._aboutport1{
+		width:250px;
+		height:250px;
+		background-image:url("images/finder.jpg");
+	}
 	
+.aboutport2box{
+	width:500px;
+	position:absolute;
+	left:280px;
+	top:120px;
+}
+
+	._aboutport2{
+		width:200px;
+		height:250px;
+		background-image:url("images/space.jpg");
+	}
 	
 	
 	

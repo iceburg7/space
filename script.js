@@ -611,6 +611,21 @@ $(document).ready(function(){
 		}
 	});
 	
+	$(document).on("click",".visual",function(){
+		console.log("clicked VISUAL	");
+		if ($(".visual").hasClass("closed")){
+			close("._viewport");
+			close(".__viewport");
+			hide(".__viewport");
+			open(".visual");
+			show(".locationimage"+location);
+		}else {
+			close(".visual");
+			hide("._visual");
+			hide(".__visual");
+		}
+	});
+	
 	$(document).on("click",".printout",function(){
 		console.log("clicked PRINTOUT");
 		if ($(".printout").hasClass("closed")){
@@ -729,7 +744,7 @@ $(document).ready(function(){
 			close(".__comms");
 			hide(".__comms");
 			open(".connect");
-			show(".connectionimage");
+			show(".connectionimage"+location);
 			show(".connectiontext");
 			show(".connectionlocation"+location);
 			hide(".answer");
@@ -773,6 +788,36 @@ $(document).ready(function(){
 	$(document).on("click",".question6",function(){
 		hide(".answer");
 		show(".answerquestion6");
+	});
+	
+	$(document).on("click",".aboutport1",function(){
+		console.log("clicked ABOUTPORT1");
+		if ($(".aboutport1").hasClass("closed")){
+			close("._port1");
+			close(".__port1");
+			hide(".__port1");
+			open(".aboutport1");
+			show("._aboutport1");
+		}else {
+			close(".aboutport1");
+			hide("._aboutport1");
+			hide(".__aboutport1");
+		}
+	});
+	
+	$(document).on("click",".aboutport2",function(){
+		console.log("clicked ABOUTPORT2");
+		if ($(".aboutport2").hasClass("closed")){
+			close("._port2");
+			close(".__port2");
+			hide(".__port2");
+			open(".aboutport2");
+			show("._aboutport2");
+		}else {
+			close(".aboutport2");
+			hide("._aboutport2");
+			hide(".__aboutport2");
+		}
 	});
 	
 	
