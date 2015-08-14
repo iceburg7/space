@@ -2,6 +2,12 @@ $(document).ready(function(){
 
 	console.log("it works.");
 	
+	var location = 1;
+	var stevenslocation = 1;
+	var finderknown = 0;
+	var finderinstalled = 0;
+	var spaceinstalled = 0;
+	
 	
 	var hide = function(y){
 		console.log("hiding "+y);
@@ -528,6 +534,115 @@ $(document).ready(function(){
 			hide("._maintenance");
 			hide(".__maintenance");
 		}
+	});
+	
+	$(document).on("click",".complete",function(){
+		console.log("clicked COMPLETE");
+		if ($(".complete").hasClass("closed")){
+			close("._tasks");
+			close(".__tasks");
+			hide(".__tasks");
+			open(".complete");
+			show("._complete");
+		}else {
+			close(".complete");
+			hide("._complete");
+			hide(".__complete");
+		}
+	});
+	
+	$(document).on("click",".incomplete",function(){
+		console.log("clicked INCOMPLETE");
+		if ($(".incomplete").hasClass("closed")){
+			close("._tasks");
+			close(".__tasks");
+			hide(".__tasks");
+			open(".incomplete");
+			show("._incomplete");
+		}else {
+			close(".incomplete");
+			hide("._incomplete");
+			hide(".__incomplete");
+		}
+	});
+	
+	$(document).on("click",".urgent",function(){
+		console.log("clicked URGENT	");
+		if ($(".urgent").hasClass("closed")){
+			close("._tasks");
+			close(".__tasks");
+			hide(".__tasks");
+			open(".urgent");
+			show("._urgent");
+		}else {
+			close(".urgent");
+			hide("._urgent");
+			hide(".__urgent");
+		}
+	});
+	
+	$(document).on("click",".printout",function(){
+		console.log("clicked PRINTOUT");
+		if ($(".printout").hasClass("closed")){
+			close("._viewport");
+			close(".__viewport");
+			hide(".__viewport");
+			open(".printout");
+			show(".printouttext");
+			show(".printoutlocation"+location);
+			hide(".description");
+			show(".descriptionlocation"+location);
+		}else {
+			close(".printout");
+			hide("._printout");
+			hide(".__printout");
+		}
+	});
+	
+	
+	$(document).on("click",".gotonav",function(){
+		console.log("clicked GO TO NAV");
+		hide(".printoutlocation1");
+		show(".printoutlocation2");
+		location = 2;
+		
+		hide(".description");
+		show(".descriptiongotonav");
+	});
+	
+	$(document).on("click",".gotolab",function(){
+		console.log("clicked GO TO LAB");
+		hide(".printoutlocation2");
+		show(".printoutlocation1");
+		location = 1;
+		
+		hide(".description");
+		show(".descriptiongotolab");
+	});
+	
+	$(document).on("click",".xlab",function(){
+		hide(".description");
+		show(".descriptionxlab");
+	});
+	
+	$(document).on("click",".xnav",function(){
+		hide(".description");
+		show(".descriptionxnav");
+	});
+	
+	$(document).on("click",".xresearch",function(){
+		hide(".description");
+		show(".descriptionxresearch");
+	});
+	
+	$(document).on("click",".xporthole",function(){
+		hide(".description");
+		show(".descriptionxporthole");
+	});
+	
+	$(document).on("click",".xwilliams",function(){
+		hide(".description");
+		show(".descriptionxwilliams");
 	});
 	
 	
