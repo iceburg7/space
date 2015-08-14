@@ -135,6 +135,16 @@ body{
 	float:left;
 }
 
+.port1{
+	width:89px;
+	float:left;
+}
+
+.port2{
+	width:89px;
+	float:left;
+}
+
 .selfbox{
 	width:90px;
 	position:absolute;
@@ -167,6 +177,20 @@ body{
 	width:190px;
 	position:absolute;
 	left:339px;
+	top:51px;
+}
+
+.port1box{
+	width:97px;
+	position:absolute;
+	left:527px;
+	top:51px;
+}
+
+.port2box{
+	width:95px;
+	position:absolute;
+	left:620px;
 	top:51px;
 }
 
@@ -620,6 +644,44 @@ body{
 	
 	.printoutlist{
 		width:180px;
+		margin-left:-5px;
+		margin-bottom:5px;
+	}
+	
+.connectionbox{
+	width:800px;
+	position:absolute;
+	left:25px;
+	top:170px;
+}
+
+	.connectionimage{
+		width:150px;
+		height:230px;
+		padding-top:12px;
+		padding-right:10px;
+		border:2px solid black;
+		float:left;
+	}
+	
+	.connectiontext{
+		width:250px;
+		height:230px;
+		padding-top:12px;
+		padding-right:10px;
+		margin-left:5px;
+		border:2px solid black;
+		float:left;
+	}
+	
+	.connectionoptions{
+		width:292px;
+		float:left;
+		padding-left:4px;
+	}
+	
+	.connectionlist{
+		width:230px;
 		margin-left:-5px;
 		margin-bottom:5px;
 	}

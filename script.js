@@ -131,6 +131,36 @@ $(document).ready(function(){
 		}
 	});
 	
+	$(document).on("click",".port1",function(){
+		console.log("clicked PORT1");
+		if ($(".port1").hasClass("closed")){
+			close("._hud");
+			close(".__hud");
+			hide(".__hud");
+			open(".port1");
+			show("._port1");
+		}else {
+			close(".port1");
+			hide("._port1");
+			hide(".__port1");
+		}
+	});
+	
+	$(document).on("click",".port2",function(){
+		console.log("clicked PORT2");
+		if ($(".port2").hasClass("closed")){
+			close("._hud");
+			close(".__hud");
+			hide(".__hud");
+			open(".port2");
+			show("._port2");
+		}else {
+			close(".port2");
+			hide("._port2");
+			hide(".__port2");
+		}
+	});
+	
 	$(document).on("click",".status",function(){
 		console.log("clicked STATUS");
 		if ($(".status").hasClass("closed")){
@@ -645,6 +675,105 @@ $(document).ready(function(){
 		show(".descriptionxwilliams");
 	});
 	
+	$(document).on("click",".takefinder",function(){
+		hide(".description");
+		show(".descriptiontakefinder");
+		$(".takefinder").removeClass("printoutlocation1");
+		hide(".takefinder")
+		$(".installfinder").addClass("printoutlocation1");
+		show(".installfinder")
+	});
+	
+	$(document).on("click",".installfinder",function(){
+		hide(".description");
+		show(".descriptioninstallfinder");
+		$(".installfinder").removeClass("printoutlocation1");
+		hide(".installfinder")
+		$(".port1").addClass("_hud");
+		show(".port1")
+		$(".pickupbulbs").addClass("printoutlocation1");
+		show(".pickupbulbs")
+		$(".takespace").addClass("printoutlocation1");
+		show(".takespace")
+	});
+	
+	$(document).on("click",".pickupbulbs",function(){
+		hide(".description");
+		show(".descriptionpickupbulbs");
+		$(".pickupbulbs").removeClass("printoutlocation1");
+		hide(".pickupbulbs")
+	});
+	
+	$(document).on("click",".takespace",function(){
+		hide(".description");
+		show(".descriptiontakespace");
+		$(".takespace").removeClass("printoutlocation1");
+		hide(".takespace")
+		$(".installspace").addClass("printoutlocation1");
+		show(".installspace")
+	});
+	
+	$(document).on("click",".installspace",function(){
+		hide(".description");
+		show(".descriptioninstallspace");
+		$(".installspace").removeClass("printoutlocation1");
+		hide(".installspace")
+		$(".port2").addClass("_hud");
+		show(".port2")
+	});
+	
+	$(document).on("click",".connection",function(){
+		console.log("clicked CONNECTION");
+		if ($(".connection").hasClass("closed")){
+			close("._comms");
+			close(".__comms");
+			hide(".__comms");
+			open(".connect");
+			show(".connectionimage");
+			show(".connectiontext");
+			show(".connectionlocation"+location);
+			hide(".answer");
+			show(".answerlocation"+location);
+		}else {
+			close(".printout");
+			hide("._printout");
+			hide(".__printout");
+		}
+	});
+	
+	$(document).on("click",".question1",function(){
+		hide(".answer");
+		show(".answerquestion1");
+	});
+	
+	$(document).on("click",".question2",function(){
+		hide(".answer");
+		show(".answerquestion2");
+	});
+	
+	$(document).on("click",".question3",function(){
+		hide(".answer");
+		show(".answerquestion3");
+	});
+	
+	$(document).on("click",".question4",function(){
+		hide(".answer");
+		show(".answerquestion4");
+	});
+	
+	$(document).on("click",".question5",function(){
+		hide(".answer");
+		show(".answerquestion5");
+		if(finderknown===0){
+			$(".takefinder").addClass("printoutlocation1");
+			finderknown = 1;
+		}
+	});
+	
+	$(document).on("click",".question6",function(){
+		hide(".answer");
+		show(".answerquestion6");
+	});
 	
 	
 	
