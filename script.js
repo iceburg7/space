@@ -7,6 +7,8 @@ $(document).ready(function(){
 	var finderknown = 0;
 	var finderinstalled = 0;
 	var spaceinstalled = 0;
+	var outtrostate = 0;
+	var introstate = 0;
 	
 	
 	var hide = function(y){
@@ -820,12 +822,166 @@ $(document).ready(function(){
 		}
 	});
 	
+	$(document).on("click",".finalspace",function(){
+		console.log("clicked FINALSPACE");
+		if ($(".finalspace").hasClass("closed")){
+			close("._port2");
+			close(".__port2");
+			hide(".__port2");
+			open(".finalspace");
+			show("._finalspace");
+		}else {
+			close(".finalspace");
+			hide("._finalspace");
+			hide(".__finalspace");
+		}
+	});
+	
+	$(document).on("click",".finalspaceno",function(){
+		hide(".__port2");
+		close(".finalspace");
+	});
+	
+	$(document).on("click",".finalspaceyes",function(){
+		close(".__hud");
+		close("._hud");
+		close(".hud");
+		hide(".__hud");
+		hide("._hud");
+		hide(".hud");
+		show(".outtrotextbox");
+		show(".outtrotext1");
+		outtrostate = 1;
+	});
+	
+	$(document).on("click",".wrapper",function(){
+		if(introstate < 8){
+			switch(introstate){
+				case 0:
+					hide(".introtext1");
+					show(".introtext2");
+					introstate = 1;
+					break;
+				case 1:
+					hide(".introtext2");
+					show(".introtext3");
+					introstate = 2;
+					break;
+				case 2:
+					hide(".introtext3");
+					show(".introtext4");
+					introstate = 3;
+					break;
+				case 3:
+					hide(".introtext4");
+					show(".introtext5");
+					introstate = 4;
+					break;
+				case 4:
+					hide(".introtext5");
+					show(".introtext6");
+					introstate = 5;
+					break;
+				case 5:
+					hide(".introtext6");
+					show(".introtext7");
+					introstate = 6;
+					break;
+				case 6:
+					hide(".introtext7");
+					show(".introtext8");
+					introstate = 7;
+					break;
+				case 7:
+					hide(".introtext");
+					hide(".introtextbox");
+					show(".hud");
+					introstate = 8;
+					break;
+			}
+		}
+		
+		if(outtrostate > 0){
+			switch(outtrostate){
+				case 1:
+					hide(".outtrotext1");
+					show(".outtrotext2");
+					outtrostate = 2;
+					break;
+				case 2:
+					hide(".outtrotext2");
+					show(".outtrotext3");
+					show(".outtroimage");
+					outtrostate = 3;
+					break;
+				case 3:
+					hide(".outtrotext3");
+					hide(".outtroimage");
+					show(".outtrotext4");
+					show(".outtrogif");
+					outtrostate = 4;
+					break;
+				case 4:
+					hide(".outtrotext4");
+					show(".outtrotext5");
+					outtrostate = 5;
+					break;
+				case 5:
+					hide(".outtrotext5");
+					show(".outtrotext6");
+					outtrostate = 6;
+					break;
+				case 6:
+					hide(".outtrotext6");
+					show(".outtrotext7");
+					outtrostate = 7;
+					break;
+				case 7:
+					hide(".outtrotext7");
+					show(".outtrotext8");
+					outtrostate = 8;
+					break;
+				case 8:
+					hide(".outtrotext8");
+					show(".outtrotext9");
+					outtrostate = 9;
+					break;
+				case 9:
+					hide(".outtrotext9");
+					show(".outtrotext10");
+					outtrostate = 10;
+					break;
+				case 10:
+					hide(".outtrotext10");
+					show(".outtrotext11");
+					outtrostate = 11;
+					break;
+				case 11:
+					show(".outtrotext12");
+					outtrostate = 12;
+					break;
+				case 12:
+					show(".outtrotext13");
+					outtrostate = 13;
+					break;
+				case 13:
+					show(".outtrotext14");
+					outtrostate = 14;
+					break;
+				case 14:
+					show(".outtrotext15");
+					outtrostate = 15;
+					break;
+				case 15:
+					show(".outtrotext16");
+					outtrostate = 16;
+					break;
+			}
+		}
+	});
 	
 	
-	
-	
-	
-	
+
 	
 	
 	
